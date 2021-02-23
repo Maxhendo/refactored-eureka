@@ -1,0 +1,60 @@
+nav {
+
+}
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 50px #00bfff, 0 0 60px #00bfff, 0 0 70px #00bfff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #6495ed, 0 0 40px #6495ed, 0 0 50px #6495ed, 0 0 60px #6495ed, 0 0 70px #6495ed, 0 0 80px #6495ed;
+  }
+}
+
+body {
+    background-image: url("spacewallpaper.jpg");
+}
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+    font-family: cursive;
+    /* center contents */
+    text-align: center;
+}
+section
+{
+  padding: 75px;
+}
+footer
+{
+  font-size: small;
+}
+p
+{
+  color: white;
+  align-content: center;
+}
+table, tr, td {
+  text-align: center;
+  color: lightblue;
+}
+td {
+  padding: 10px;
+}

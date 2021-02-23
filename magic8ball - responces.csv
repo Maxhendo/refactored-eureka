@@ -1,0 +1,22 @@
+ID,answer,tone
+1,"As I see it, yes.",pos
+2,Ask again later.,neu
+3,Better not tell you now.,neu
+4,Cannot predict now.,neu
+5,Concentrate and ask again.,neu
+6,Don't count on it.,neg
+7,It is certain.,pos
+8,It is decidedly so.,pos
+9,Most likely.,pos
+10,My reply is no. ,neg
+11,My sources say no.,neg
+12,Outlook not so good.,neg
+13,Outlook good.,pos
+14,"Reply hazy, try again.",neg
+15,Signs point to yes.,pos
+16,Very doubtful.,neg
+17,Without a doubt.,pos
+18,Yes.,pos
+19,Yes - definitely ,pos
+20,You may rely on it.,pos
+21,Nope.,neg

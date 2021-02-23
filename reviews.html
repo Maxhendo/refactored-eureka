@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Reviews
+{% endblock %}
+
+{% block main %}
+    <h1 class= "glow">Reviews</h1>
+
+        <table>
+                {% for testimony in testimony %}
+                <tr>
+                    <td> {{testimony}} </td>
+                </tr>
+                {% endfor %}
+        </table>
+
+
+         <a href= "/add">ADD</a>
+{% endblock %}

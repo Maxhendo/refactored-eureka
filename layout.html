@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <meta charset = 'UTF-8'>
+        <meta name= "description" content= "Predict Yes and No answers">
+        <meta name= "author" content= "Matt Henderson">
+        <meta name= "keywords" content= "universe, predictions, AI">
+        <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- https://favicon.io/emoji-favicons/money-mouth-face/ -->
+        <link href="/static/favicon.ico" rel="icon">
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script>
+            function caution()
+            {
+               alert("SPOILER: This page will ruin the illuision of artificial inteligence by explaining the frame work of its programing");
+            }
+        </script>
+
+        <title>the Universe: {% block title %}{% endblock %}</title>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <!-- Brand/logo -->
+          <a class="navbar-brand" href="/"><img src= "static/CBfavicon.jpg" alt="logo" style="width:40px;"></a>
+          <div class= "collapse navbar-collapse" id= "navbar"
+            {% if session.user_ID %}
+                <!-- Links -->
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/about" onclick= "caution()">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/reviews">Reviews</a></li>
+                </ul>
+                <ul class= "navbar-nav">
+                  <li class= "nav-item"><a class= "nav-link" href="/">Log Out</a></li>
+                </ul>
+            {% else %}
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about" onclick= "caution()">About</a></li>
+                </ul>
+            {% endif %}
+
+          </div>
+        </nav>
+
+
+        <main class="container p-5">
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer class= "container p-3">
+             <p>The Universe is a compilation of psychic powers and digital convince. Look deep into the cosmos and ask any polar question that ways on your spirit.
+             The universe can only give limited responses so enter your questions carefully. Caution to those who proceed. Despite the accuracy of the Universe,
+             it will never answer “why?”. Disclaimer the Universe is not responsible the interpretations or actions user.</p>
+        </footer>
+    </body>
+
+</html>
